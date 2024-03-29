@@ -35,7 +35,7 @@ export const Button = ({
     <button
       style={{
         backgroundColor: backgroundColor,
-        borderColor: borderColor,
+        border: `1px solid ${borderColor}`,
         color: textColor,
       }}
       className={`${buttonClass()} gap-1 rounded-lg py-4 px-8 justify-between`}

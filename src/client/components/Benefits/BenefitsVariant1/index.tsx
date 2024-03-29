@@ -45,7 +45,7 @@ export const BenefitsVariant1 = () => {
   return (
     <div className="flex flex-col items-center py-14 gap-12">
       <SectionTextContent variant="medium" {...TextContentProps} />
-      <div className="flex flex-row flex-wrap	lg:justify-between md:justify-around lg:gap-2 md:gap-10">
+      <div className="flex flex-row flex-wrap	lg:justify-between md:justify-around lg:gap-2 md:gap-10 gap-10">
         {cards.map((card) => (
           <CardWithImage cardsPerRow={3} key={card.title} {...card} />
         ))}

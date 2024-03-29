@@ -31,7 +31,7 @@ export const SectionTextContent = ({
     case "medium":
       return (
         <div
-          className={`flex flex-col ${alignmentClass()} gap-3 lg:w-2/4 md:w-4/5`}
+          className={`flex flex-col ${alignmentClass()} gap-3 lg:w-2/4 md:w-4/5 w-4/5`}
         >
           {topComponent && topComponent}
           <h1 className="text-4xl font-bold leading-tight">{title}</h1>
