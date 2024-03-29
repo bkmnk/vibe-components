@@ -1,0 +1,1 @@
+export { SectionTextContent } from "./SectionTextContent";

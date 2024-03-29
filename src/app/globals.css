@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: 'Figtree', sans-serif;
+}
+body {
+  color: #18181B;
+  background-color:  #FAFAFA;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
