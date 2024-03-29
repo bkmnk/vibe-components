@@ -8,7 +8,11 @@ interface PillProps {
 export const Pill = ({ text, backgroundColor, textColor }: PillProps) => {
   return (
     <span
-      className={`text-sm font-bold rounded-full bg-[${backgroundColor}] text-[${textColor}] py-2 px-4`}
+      style={{
+        backgroundColor: backgroundColor,
+        color: textColor,
+      }}
+      className="text-sm font-bold rounded-full py-2 px-4"
     >
       {text}
     </span>

@@ -13,8 +13,8 @@ export const Button = ({
   icon,
   iconPosition,
   textColor = "#000000",
-  backgroundColor,
-  borderColor,
+  backgroundColor = "transparent",
+  borderColor = "transparent",
   ...props
 }: ButtonProps) => {
   const buttonClass = () => {
@@ -30,18 +30,18 @@ export const Button = ({
         return "flex flex-row items-center";
     }
   };
-  const backgroundClass = backgroundColor
-    ? `bg-[${backgroundColor}]`
-    : "bg-transparent";
-  const borderClass = borderColor
-    ? `border border-[${borderColor}]`
-    : "border-transparent";
+
   return (
     <button
-      className={`${buttonClass()} gap-1 ${backgroundClass} ${borderClass} rounded-lg py-4 px-8 justify-between`}
+      style={{
+        backgroundColor: backgroundColor,
+        borderColor: borderColor,
+        color: textColor,
+      }}
+      className={`${buttonClass()} gap-1 rounded-lg py-4 px-8 justify-between`}
       {...props}
     >
-      <span className={`text-[${textColor}] text-sm font-semibold`}>
+      <span className="text-sm font-semibold" style={{ color: textColor }}>
         {text}
       </span>
       {icon}

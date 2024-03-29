@@ -16,7 +16,7 @@ export const CardWithImage = ({
   cardsPerRow = 0,
 }: CardWithImageProps) => {
   const width = `${Math.round(100 / cardsPerRow - 1)}%`;
-  const widthClass = cardsPerRow ? `w-[${width}]` : "";
+  const widthClass = cardsPerRow ? `w-[${width}]` : "w-[32%]";
   return (
     <div
       className={`flex flex-col items-center text-center gap-8 lg:${widthClass} md:w-5/12`}

@@ -15,7 +15,7 @@ export const CardWithIcon = ({
   cardsPerRow = 0,
 }: CardWithIconProps) => {
   const width = `${Math.round(100 / cardsPerRow - 1)}%`;
-  const widthClass = cardsPerRow ? `w-[${width}]` : "";
+  const widthClass = cardsPerRow ? `w-[${width}]` : "w-[32%]";
   return (
     <div
       className={`flex flex-col items-center justify-between text-center gap-5 px-5 py-12 bg-[#ffffff] rounded-3xl shadow-sm lg:${widthClass} md:w-5/12`}
