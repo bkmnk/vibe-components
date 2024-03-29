@@ -43,7 +43,7 @@ export const BenefitsVariant5 = () => {
         width={580}
         height={600}
         alt="A mock image"
-        className="border border-[#E5E5E5] rounded-3xl  object-cover w-2/4 md:h-[600px] sm:max-h-[40vh] lg:h-2/3  lg:max-h-[100vh]"
+        className="border border-[#E5E5E5] rounded-3xl  object-cover w-2/4 md:h-[600px] sm:max-h-[40vh] lg:h-2/3 h-[400px] lg:max-h-[100vh]"
       />
     </div>
   );
